@@ -92,5 +92,5 @@ Pull requests and feedback are welcome. If you find a bug or want to suggest a f
 
 MIT License – you are free to use, modify, and distribute this project.
 
-
+---
 
