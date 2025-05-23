@@ -24,6 +24,10 @@ This repository currently includes the following modules:
 * Detects facial landmarks including eyes, lips, nose, and eyebrows.
 * Enables facial expression analysis, eye tracking, and emotion detection.
 
+### Face Mesh Module
+* Predicts over 460 high-fidelity facial landmarks.
+* Supports 3D face modeling, detailed facial tracking, and AR overlays.
+  
 All modules are built on **MediaPipe**, ensuring efficient performance and high accuracy.
 
 ---
@@ -49,8 +53,8 @@ pip install mediapipe opencv-python
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/iHakawaTi/CV-Modules.git
+cd CV-Modules
 ```
 
 ---
@@ -61,8 +65,8 @@ cd your-repo-name
 .
 ├── hand_module.py        # Hand detection and tracking
 ├── pose_module.py        # Full-body pose estimation
-├── face_module.py        # Facial landmarks detection
-├── utils/                # Shared utility functions
+├── face_module.py        # Basic facial landmarks
+├── face_mesh_module.py   # Detailed face mesh detection
 └── examples/             # Example scripts for testing modules
 ```
 
@@ -88,7 +92,5 @@ Pull requests and feedback are welcome. If you find a bug or want to suggest a f
 
 MIT License – you are free to use, modify, and distribute this project.
 
----
 
-Let me know if you'd like to customize the repo structure, include sample outputs or media, or generate demo scripts for quick testing.
 
