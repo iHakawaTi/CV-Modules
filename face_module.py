@@ -4,6 +4,12 @@ import time
 
 
 class FaceDetector():
+    """
+    Detects faces in an image using MediaPipe's face detection module.
+
+    Args:
+        minDetectionCon (float): Minimum confidence threshold for detection.
+    """
     def __init__(self,minDetectionCon=0.5):
 
         self.minDetectionCon = minDetectionCon
@@ -13,7 +19,17 @@ class FaceDetector():
         self.faceDetection = self.mpFaceDetection.FaceDetection(self.minDetectionCon)
 
     def findFaces(self, img, draw=True):
+    """
+    Detects faces and optionally draws bounding boxes.
 
+    Args:
+        img (ndarray): Input BGR image.
+        draw (bool): Flag to draw results on the image.
+
+    Returns:
+        img (ndarray): Image with results drawn (if enabled).
+        bboxs (list): List of bounding boxes and confidence scores.
+    """
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         self.results = self.faceDetection.process(imgRGB)
         # print(self.results)
