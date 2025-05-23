@@ -63,11 +63,11 @@ cd CV-Modules
 
 ```
 .
-├── hand_module.py        # Hand detection and tracking
-├── pose_module.py        # Full-body pose estimation
-├── face_module.py        # Basic facial landmarks
-├── face_mesh_module.py   # Detailed face mesh detection
-└── examples/             # Example scripts for testing modules
+├── face_mesh_module.py        # Hand detection and tracking
+├── face_module.py        # Full-body pose estimation
+├── hand_module.py        # Basic facial landmarks
+└── pose_module.py   # Detailed face mesh detection
+
 ```
 
 ---
